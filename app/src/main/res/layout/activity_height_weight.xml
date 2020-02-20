@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HeightWeightActivity">
+
+    <Button
+        android:id="@+id/computeBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="next"
+        android:textColor="#473434"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@+id/backNameAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backNameAge"
+        app:layout_constraintTop_toTopOf="@+id/backNameAge"
+        app:layout_constraintVertical_bias="0.75"/>
+
+    <Button
+        android:id="@+id/backNameAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Back"
+        android:textColor="#473434"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/computeBMI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightBox" />
+
+    <TextView
+        android:id="@+id/heightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="Height: "
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. 80 kg"
+        android:inputType="numberSigned|number|numberDecimal|numberPassword"
+        android:paddingLeft="0px"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:paddingBottom="5px"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightView" />
+
+    <TextView
+        android:id="@+id/weightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="Weight:"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/heightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. 180 cm"
+        android:inputType="numberSigned|number|textPersonName|numberDecimal|numberPassword"
+        android:paddingLeft="0px"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:paddingBottom="5px"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

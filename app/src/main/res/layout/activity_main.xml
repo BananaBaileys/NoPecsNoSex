@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".NameAgeActivity">
+
+    <Button
+        android:id="@+id/openHeightWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="next"
+        android:textColor="#473434"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameditText" />
+
+    <TextView
+        android:id="@+id/NametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="Name: "
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NameditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. 20"
+        android:paddingLeft="0px"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:paddingBottom="5px"
+        android:textColor="#473434"
+        android:inputType="numberSigned|number|textPersonName|numberDecimal|numberPassword"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgetextView" />
+
+    <TextView
+        android:id="@+id/AgetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="Age:"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AgeeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. John Smith"
+        android:inputType="textPersonName"
+        android:paddingLeft="0px"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:paddingBottom="5px"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NametextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

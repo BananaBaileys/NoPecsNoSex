@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".FinalNextActivity">
+
+    <Button
+        android:id="@+id/backHeightWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#473434"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/openMainPage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HowdidyouknoweditText" />
+
+    <Button
+        android:id="@+id/openMainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textColor="#473434"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backHeightWeight"
+        app:layout_constraintTop_toBottomOf="@+id/HowdidyouknoweditText" />
+
+    <TextView
+        android:id="@+id/AddresstextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="Address: "
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/HowdidyouknoweditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. From friend, please you have no friends"
+        android:inputType="textPersonName"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:textColor="#473434"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HowdidyouknowtextView" />
+
+    <TextView
+        android:id="@+id/HowdidyouknowtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:text="How did you hear about us:"
+        android:textColor="#473434"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AddresseditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:width="140pt"
+        android:ems="9"
+        android:fontFamily="@font/archivo_narrow"
+        android:hint="ie. 4700 Kelee Street, Toronto"
+        android:inputType="textPersonName"
+        android:paddingLeft="0px"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingBottom="15px"
+        android:textColor="#473434"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddresstextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
